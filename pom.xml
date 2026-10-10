@@ -5,6 +5,12 @@
 	<groupId>ar.com.educacionit</groupId>
 	<artifactId>jsw</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	
+	<properties>
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
+	</properties>properties>
+	
 	<dependencies>
 		<!-- Source: https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
 		<dependency>

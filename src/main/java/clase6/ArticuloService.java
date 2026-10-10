@@ -57,6 +57,30 @@ public class ArticuloService {
 		return articulo;
 	}
 
+	public ArticuloEntity buscarPorId(Integer id) throws SQLException {
+		ArticuloEntity articulos = null;
+		
+		String sql = "SELECT * FROM articulos where id = ?";
+		PreparedStatement ps = conn.prepareStatement(sql);
+		ps.setInt(1, id);
+		
+		ResultSet rs = ps.executeQuery();
+				
+		if (rs.next()) {
+			articulos = new ArticuloEntity(
+				rs.getInt("id"),
+				rs.getString("titulo"),
+				rs.getString("codigo"),
+				rs.getDouble("precio"),
+				rs.getInt("tipo")
+			);			
+		}
+		
+		this.conn.close();
+		
+		return articulos;
+	}
+	
 	public List<ArticuloEntity> listarArticulos() throws SQLException {
 		List<ArticuloEntity> articulos = new ArrayList<>();
 		
@@ -80,14 +104,37 @@ public class ArticuloService {
 		return articulos;
 	}
 
-	public void eliminarPorId(Integer id) throws SQLException {
 		String sql = "DELETE FROM articulos WHERE id = ?";
+		public void eliminarPorId(Integer id) throws SQLException {
 		PreparedStatement ps = conn.prepareStatement(sql); // SQL Injection safe
 		ps.setInt(1, id);
 		int aux = ps.executeUpdate();
 		
 		if(aux > 0) {
 			System.out.println("Articulo con ID " + id + " eliminado correctamente.");
+		} else {
+			System.out.println("No se encontró un articulo con ID " + id + ".");
+		}
+		
+		this.conn.close();
+	}
+
+	public void actualizarArticulo(Integer id, ArticuloDTO articuloDTO) throws SQLException {
+		
+		String sql = "UPDATE articulos SET titulo = ?, codigo = ?, precio = ?, tipo = ? WHERE id = ?";
+		
+		PreparedStatement ps = conn.prepareStatement(sql);
+		
+		ps.setString(1, articuloDTO.getTitulo());
+		ps.setString(2, articuloDTO.getCodigo());
+		ps.setDouble(3, articuloDTO.getPrecio());
+		ps.setInt(4, articuloDTO.getTipo());
+		ps.setInt(5, id);
+		
+		int aux = ps.executeUpdate();
+		
+		if(aux > 0) {
+			System.out.println("Articulo con ID " + id + " actualizado correctamente.");
 		} else {
 			System.out.println("No se encontró un articulo con ID " + id + ".");
 		}

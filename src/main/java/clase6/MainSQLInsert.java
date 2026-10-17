@@ -2,7 +2,7 @@ package clase6;
 
 import java.util.Scanner;
 
-import clase7.domain.ArticuloEntity;
+import producto.crear.domain.ArticuloEntity;
 
 public class MainSQLInsert {
 

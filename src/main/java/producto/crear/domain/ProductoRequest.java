@@ -1,4 +1,4 @@
-package clase7.domain;
+package producto.crear.domain;
 
 //representa la estructura de datos que se recibe desde el cliente para crear un producto
 //clase innmutable, solo tiene getters, no setters, no se puede modificar una vez creado

@@ -1,10 +1,10 @@
-package clase7.application;
+package producto.crear.application;
 
 import clase6.ArticuloDTO;
-import clase7.domain.IValidable;
-import clase7.domain.ProductoRequest;
-import clase7.domain.ResultadoValidacion;
-import clase7.infrastructure.ProductoService;
+import producto.crear.domain.IValidable;
+import producto.crear.domain.ProductoRequest;
+import producto.crear.domain.ResultadoValidacion;
+import producto.crear.infrastructure.ProductoService;
 
 /**
  * Caso de uso: Crear un producto

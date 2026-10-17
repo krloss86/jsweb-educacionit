@@ -1,4 +1,4 @@
-package clase7.domain;
+package producto.crear.domain;
 
 public class Error {
 

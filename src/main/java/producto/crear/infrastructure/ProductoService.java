@@ -1,7 +1,7 @@
-package clase7.infrastructure;
+package producto.crear.infrastructure;
 
 import clase6.ArticuloDTO;
-import clase7.domain.ProductoDAO;
+import producto.crear.domain.ProductoDAO;
 
 public class ProductoService {
 

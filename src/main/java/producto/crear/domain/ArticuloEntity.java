@@ -1,4 +1,4 @@
-package clase7.domain;
+package producto.crear.domain;
 
 public class ArticuloEntity {
 	//cmpleta con los atributos de la tabla articulos

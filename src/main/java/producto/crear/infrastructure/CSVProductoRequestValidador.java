@@ -1,13 +1,15 @@
-package clase7.infrastructure;
+package producto.crear.infrastructure;
 
-import clase7.domain.IValidable;
-import clase7.domain.ProductoRequest;
-import clase7.domain.ResultadoValidacion;
+import producto.crear.domain.IValidable;
+import producto.crear.domain.ProductoRequest;
+import producto.crear.domain.ResultadoValidacion;
 
-public class ProductoRequestValidador implements IValidable<ProductoRequest> {
+public class CSVProductoRequestValidador implements IValidable<String> {
 
 	@Override
-	public ResultadoValidacion validate(ProductoRequest productoRequest) {
+	public ResultadoValidacion validate(String productoRequest) {
+		// 1;abc1;titu1;14501;1
+
 		ResultadoValidacion resultado = new ResultadoValidacion();
 		
 		if (productoRequest.getTitulo() == null || productoRequest.getTitulo().isEmpty()) {

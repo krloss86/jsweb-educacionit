@@ -8,7 +8,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-import clase7.domain.ArticuloEntity;
+import producto.crear.domain.ArticuloEntity;
 
 public class ArticuloService {
 

@@ -3,7 +3,7 @@ package clase6;
 import java.sql.SQLException;
 import java.util.List;
 
-import clase7.domain.ArticuloEntity;
+import producto.crear.domain.ArticuloEntity;
 
 public class MainListarArticulos {
 

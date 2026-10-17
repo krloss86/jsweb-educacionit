@@ -1,4 +1,4 @@
-package clase7.infrastructure;
+package producto.crear.infrastructure;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -8,8 +8,8 @@ import java.util.Collection;
 
 import clase6.ArticuloDTO;
 import clase6.DbManager;
-import clase7.domain.ArticuloEntity;
-import clase7.domain.ProductoDAO;
+import producto.crear.domain.ArticuloEntity;
+import producto.crear.domain.ProductoDAO;
 
 public class MysqlProductoDAOImpl implements ProductoDAO {
 

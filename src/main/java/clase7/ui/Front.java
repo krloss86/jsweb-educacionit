@@ -1,10 +1,11 @@
-package clase7.application;
+package clase7.ui;
 
-import clase7.domain.ProductoDAO;
-import clase7.domain.ProductoRequest;
-import clase7.infrastructure.MysqlProductoDAOImpl;
-import clase7.infrastructure.ProductoRequestValidador;
-import clase7.infrastructure.ProductoService;
+import producto.crear.application.CrearProducto;
+import producto.crear.domain.ProductoDAO;
+import producto.crear.domain.ProductoRequest;
+import producto.crear.infrastructure.MysqlProductoDAOImpl;
+import producto.crear.infrastructure.ProductoRequestValidador;
+import producto.crear.infrastructure.ProductoService;
 
 public class Front {
 

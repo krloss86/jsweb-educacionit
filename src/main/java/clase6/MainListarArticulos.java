@@ -3,6 +3,8 @@ package clase6;
 import java.sql.SQLException;
 import java.util.List;
 
+import clase7.domain.ArticuloEntity;
+
 public class MainListarArticulos {
 
 	public static void main(String[] args) throws SQLException {

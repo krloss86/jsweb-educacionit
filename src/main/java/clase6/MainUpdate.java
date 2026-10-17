@@ -2,6 +2,8 @@ package clase6;
 
 import java.util.Scanner;
 
+import clase7.domain.ArticuloEntity;
+
 public class MainUpdate {
 
 	public static void main(String[] args) throws Exception {

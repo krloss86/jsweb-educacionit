@@ -1,4 +1,4 @@
-package clase6;
+package clase7.domain;
 
 public class ArticuloEntity {
 	//cmpleta con los atributos de la tabla articulos

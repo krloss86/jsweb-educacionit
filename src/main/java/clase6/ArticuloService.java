@@ -8,6 +8,8 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
+import clase7.domain.ArticuloEntity;
+
 public class ArticuloService {
 
 	//obtner la conexion a la base de datos

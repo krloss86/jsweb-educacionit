@@ -11,4 +11,10 @@ public class Request {
 		return this.clave;
 	}
 
+	@Override
+	public String toString() {
+		return "Request [clave=" + clave + "]";
+	}
+
+	
 }
